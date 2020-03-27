@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 *, *:before, *:after {
@@ -50,10 +51,12 @@ html {
     @include center;
     flex-direction: column;
     &--title{
+      font-size: 3em;
       font-weight: 100;
+      font-family: 'Raleway', sans-serif;
     }
     &--text{
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       font-size: .8em;
       font-weight: 900;
     }
@@ -64,9 +67,40 @@ html {
       margin-top: 60px;
       &-text{
         color: $white;
+        letter-spacing: 3px;
         margin: 0;
         font-weight: 100;
+        font-size: .8em;
       }
     }
+  }
+}
+.skills{
+  width: 100%;
+  @include center;
+  flex-direction: column;
+  background: $black;
+  color: $white;
+  margin: 0;
+  &__title{
+    letter-spacing: 3px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  &__content{
+    width: 80%;
+    &--box{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &-img{
+        width: 30px;
+        height: 30px;
+      }
+      &-text{
+        margin-left: 10px;
+      }
+    }  
   }
 }

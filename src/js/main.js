@@ -14,9 +14,11 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Niżej możesz pisać.
+const project = document.querySelector('.projects__example');
+const choose = document.querySelector('.projects__choose');
+// const options = document.querySelector('.projects__example--button');
 
 
-console.log(`Hello world!`);
-
-
+project.addEventListener('click', (e) =>{
+  choose.classList.toggle('projects__choose--js');
+})

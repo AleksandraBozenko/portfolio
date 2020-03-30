@@ -161,6 +161,11 @@ html {
     font-weight: 100;
     padding: 10px;
   }
+  &__content{
+    width: 100%;
+    @include center;
+    flex-direction: column;
+  }
   &__example{
     width: 300px;
     height: 300px;
@@ -220,11 +225,16 @@ html {
       }
     }
   }
-  // .projects{
-  //   &__title{
-  //     font-size: 2em;
-  //   }
-  // }
+  .projects{
+    &__title{
+      font-size: 2em;
+    }
+    &__content{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }
 @media(min-width: 700px){
   .skills{

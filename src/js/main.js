@@ -22,3 +22,21 @@ const choose = document.querySelector('.projects__choose');
 project.addEventListener('click', (e) =>{
   choose.classList.toggle('projects__choose--js');
 })
+
+// Hamburger menu
+
+const hamburger = document.querySelector('.navigation__hamburger--button');
+const navigation = document.querySelector('.navigation');
+
+const cross = document.querySelector('.nav__cross--button');
+const nav = document.querySelector('.nav');
+
+hamburger.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+cross.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})

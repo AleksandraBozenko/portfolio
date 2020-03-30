@@ -39,6 +39,47 @@ html {
     }
   }
 }
+.navigation--js{
+  display: none;
+}
+.nav{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  &__list{
+    list-style: none;
+    margin-top: 50px;
+    &--item{
+      padding: 30px;
+      font-size: 1.3em;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+  }
+  &__navigation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__cross{
+    width: 90px;
+    height: 50px;
+    margin-top: 30px;
+    &--button{
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: none;
+      &-img{
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}
+.nav--js{
+  display: block;
+}
 .header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.512)), url(/assets/img/bg.jpg);
   background-position: center;

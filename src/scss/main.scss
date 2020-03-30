@@ -204,3 +204,32 @@ html {
     z-index: 2;
   }
 }
+
+@media(min-width: 500px){
+  .skills{
+    &__title{
+      font-size: 2em;
+    }
+    &__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 60px;
+      width: 100%;
+      &--box{
+        padding: 10px;
+      }
+    }
+  }
+  // .projects{
+  //   &__title{
+  //     font-size: 2em;
+  //   }
+  // }
+}
+@media(min-width: 700px){
+  .skills{
+    &__content{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

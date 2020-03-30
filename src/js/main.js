@@ -40,3 +40,31 @@ cross.addEventListener('click', (e) =>{
   nav.classList.toggle('nav--js');
   navigation.classList.toggle('navigation--js');
 })
+
+// Nav options
+
+const home = document.getElementById('home');
+const skills = document.getElementById('skills');
+const projects = document.getElementById('projects');
+const contact = document.getElementById('contact');
+
+
+home.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+skills.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+projects.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+contact.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})

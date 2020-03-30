@@ -49,11 +49,15 @@ html {
   &__list{
     list-style: none;
     margin-top: 50px;
-    &--item{
-      padding: 30px;
-      font-size: 1.3em;
-      text-align: center;
-      letter-spacing: 3px;
+    &--link{
+      text-decoration: none;
+      color: $black;
+      &-item{
+        padding: 30px;
+        font-size: 1.3em;
+        text-align: center;
+        letter-spacing: 3px;
+      }
     }
   }
   &__navigation{

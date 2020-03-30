@@ -32,7 +32,7 @@
   </head>
   <body>
     <main class="main">
-      <div class="navigation">
+      <div class="navigation" id="homeSection">
         <div class="navigation__hamburger">
           <button class="navigation__hamburger--button">
             <img class="navigation__hamburger--button-img" src="/assets/img/hamburger.png" alt="hamburger menu">
@@ -48,10 +48,10 @@
         </div>
       </div>
         <ul class="nav__list">
-          <li class="nav__list--item">HOME</li>
-          <li class="nav__list--item">SKILLS</li>
-          <li class="nav__list--item">PROJECTS</li>
-          <li class="nav__list--item">CONTACT</li>
+          <a class="nav__list--link" href="#homeSection" ><li class="nav__list--link-item">HOME</li></a>
+          <a class="nav__list--link" href="#skillsSection" ><li class="nav__list--link-item">SKILLS</li></a>
+          <a class="nav__list--link" href="#projectsSection" ><li class="nav__list--link-item">PROJECTS</li></a>
+          <a class="nav__list--link" href="#contactSection" ><li class="nav__list--link-item">CONTACT</li></a>
         </ul>
       </div>
       <header class="header">
@@ -65,7 +65,7 @@
       </a>
       </div>
       </header>
-      <section class="skills" id="skillsId">
+      <section class="skills" id="skillsSection">
         <h2 class="skills__title">MY SKILLS</h2>
         <div class="skills__content">
           <div class="skills__content--box">
@@ -106,7 +106,7 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projectsSection">
         <h2 class="projects__title">MY PROJECTS</h2>
         <div class="projects__example">
           <div class="projects__choose">

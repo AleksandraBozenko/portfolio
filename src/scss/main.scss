@@ -225,6 +225,52 @@ html {
     z-index: 2;
   }
 }
+.contact{
+  width: 100%;
+  @include center;
+  flex-direction: column;
+  background: $orange;
+  &__title{
+    letter-spacing: 3px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  &__form{
+    @include center;
+    flex-direction: column;
+    padding: 10px;
+    &--box{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 30px;
+      &-label{
+        font-size: 1.1em;
+      }
+      &-input{
+        border: none;
+        background: none;
+        border-bottom: 1px solid $black;
+        margin: 20px 0;
+        padding: 5px;
+        font-size: 1em;
+      }
+    }
+    &--button{
+      background: none;
+      border: 1px solid $black;
+      padding: 10px;
+      width: 130px;
+      &-text{
+        letter-spacing: 3px;
+        font-size: 1.3em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// media
 
 @media(min-width: 500px){
   .skills{
@@ -249,6 +295,11 @@ html {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
+    }
+  }
+  .contact{
+    &__title{
+      font-size: 2em;
     }
   }
 }
